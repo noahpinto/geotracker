@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Map
+    </ion-title>
+    <ion-buttons end>
+      <!--<button ion-button (click)="addMarker()"><ion-icon name="add"></ion-icon>Add Marker</button>
+      <button [color]="color" ion-button (click)="tracker()">{{status}}</button>
+      <button ion-button (click)="logout()">logout</button>-->
+      <button ion-button icon-only (click)="show($event)">
+        <ion-icon name="more"></ion-icon>
+      </button>
+
+    </ion-buttons> 
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content>
+  <div #map id="map"></div> 
+  <button ion-button (click)="onNotify()" >Notify</button>
+</ion-content>
